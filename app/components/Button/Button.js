@@ -1,12 +1,13 @@
+
 import buttonStyles from './button.module.css';
 
-const Button=({text})=> {
+const Button=({children,theme})=> {
 
 return(
-<button className={buttonStyles.button}>
+<button className={theme==='primary' ?  buttonStyles.primary : buttonStyles.button}>
 
 
-  {text}  
+  {children}  
      </button>
 
 )
