@@ -1,14 +1,16 @@
 import layoutStyles from './layout.module.css';
+import Header from '../Header/Header';
 
 const Layout=({children})=> {
 
 return(
 
-  
-<main> 
+  <>
+  <Header/>
+<main className={layoutStyles.container}> 
 {children}
 </main>
-
+</>
 )
 
 

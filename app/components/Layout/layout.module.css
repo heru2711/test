@@ -1,13 +1,19 @@
 /* mobile*/
-.container{
-width: 100%;
-margin-right:0.25rem;
-margin-left: 0.25rem;
+.container
+{
+    width: 100vw; /* Ensure it fills viewport width */
+    height: 100vh; /* Ensure it fills viewport height */
+    background-color:black; /* Your desired background color */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Optional: Prevent content overflow */
+
 }
 @media (min-width: 768px) { 
-    .container{
-        max-width: 640px;
-        margin: 0 auto;
-
+    .container {
+        display: flex; /* Enable flexbox layout for centering */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically (optional) */
+      }
     }
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap')
